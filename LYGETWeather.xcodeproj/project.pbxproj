@@ -1,0 +1,431 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD58FBC11BA15CC6003B9321 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CD58FBC01BA15CC6003B9321 /* main.m */; };
+		CD58FBC41BA15CC6003B9321 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD58FBC31BA15CC6003B9321 /* AppDelegate.m */; };
+		CD58FBC71BA15CC6003B9321 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD58FBC61BA15CC6003B9321 /* ViewController.m */; };
+		CD58FBCA1BA15CC6003B9321 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD58FBC81BA15CC6003B9321 /* Main.storyboard */; };
+		CD58FBCC1BA15CC6003B9321 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD58FBCB1BA15CC6003B9321 /* Images.xcassets */; };
+		CD58FBCF1BA15CC6003B9321 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD58FBCD1BA15CC6003B9321 /* LaunchScreen.xib */; };
+		CD58FBDB1BA15CC6003B9321 /* LYGETWeatherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD58FBDA1BA15CC6003B9321 /* LYGETWeatherTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CD58FBD51BA15CC6003B9321 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD58FBB31BA15CC6003B9321 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD58FBBA1BA15CC6003B9321;
+			remoteInfo = LYGETWeather;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CD58FBBB1BA15CC6003B9321 /* LYGETWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LYGETWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD58FBBF1BA15CC6003B9321 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD58FBC01BA15CC6003B9321 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CD58FBC21BA15CC6003B9321 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CD58FBC31BA15CC6003B9321 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CD58FBC51BA15CC6003B9321 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CD58FBC61BA15CC6003B9321 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CD58FBC91BA15CC6003B9321 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CD58FBCB1BA15CC6003B9321 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CD58FBCE1BA15CC6003B9321 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		CD58FBD41BA15CC6003B9321 /* LYGETWeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LYGETWeatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD58FBD91BA15CC6003B9321 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD58FBDA1BA15CC6003B9321 /* LYGETWeatherTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYGETWeatherTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD58FBB81BA15CC6003B9321 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD58FBD11BA15CC6003B9321 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD58FBB21BA15CC6003B9321 = {
+			isa = PBXGroup;
+			children = (
+				CD58FBBD1BA15CC6003B9321 /* LYGETWeather */,
+				CD58FBD71BA15CC6003B9321 /* LYGETWeatherTests */,
+				CD58FBBC1BA15CC6003B9321 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CD58FBBC1BA15CC6003B9321 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD58FBBB1BA15CC6003B9321 /* LYGETWeather.app */,
+				CD58FBD41BA15CC6003B9321 /* LYGETWeatherTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD58FBBD1BA15CC6003B9321 /* LYGETWeather */ = {
+			isa = PBXGroup;
+			children = (
+				CD58FBC21BA15CC6003B9321 /* AppDelegate.h */,
+				CD58FBC31BA15CC6003B9321 /* AppDelegate.m */,
+				CD58FBC51BA15CC6003B9321 /* ViewController.h */,
+				CD58FBC61BA15CC6003B9321 /* ViewController.m */,
+				CD58FBC81BA15CC6003B9321 /* Main.storyboard */,
+				CD58FBCB1BA15CC6003B9321 /* Images.xcassets */,
+				CD58FBCD1BA15CC6003B9321 /* LaunchScreen.xib */,
+				CD58FBBE1BA15CC6003B9321 /* Supporting Files */,
+			);
+			path = LYGETWeather;
+			sourceTree = "<group>";
+		};
+		CD58FBBE1BA15CC6003B9321 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD58FBBF1BA15CC6003B9321 /* Info.plist */,
+				CD58FBC01BA15CC6003B9321 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CD58FBD71BA15CC6003B9321 /* LYGETWeatherTests */ = {
+			isa = PBXGroup;
+			children = (
+				CD58FBDA1BA15CC6003B9321 /* LYGETWeatherTests.m */,
+				CD58FBD81BA15CC6003B9321 /* Supporting Files */,
+			);
+			path = LYGETWeatherTests;
+			sourceTree = "<group>";
+		};
+		CD58FBD81BA15CC6003B9321 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD58FBD91BA15CC6003B9321 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD58FBBA1BA15CC6003B9321 /* LYGETWeather */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD58FBDE1BA15CC6003B9321 /* Build configuration list for PBXNativeTarget "LYGETWeather" */;
+			buildPhases = (
+				CD58FBB71BA15CC6003B9321 /* Sources */,
+				CD58FBB81BA15CC6003B9321 /* Frameworks */,
+				CD58FBB91BA15CC6003B9321 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LYGETWeather;
+			productName = LYGETWeather;
+			productReference = CD58FBBB1BA15CC6003B9321 /* LYGETWeather.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CD58FBD31BA15CC6003B9321 /* LYGETWeatherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD58FBE11BA15CC6003B9321 /* Build configuration list for PBXNativeTarget "LYGETWeatherTests" */;
+			buildPhases = (
+				CD58FBD01BA15CC6003B9321 /* Sources */,
+				CD58FBD11BA15CC6003B9321 /* Frameworks */,
+				CD58FBD21BA15CC6003B9321 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD58FBD61BA15CC6003B9321 /* PBXTargetDependency */,
+			);
+			name = LYGETWeatherTests;
+			productName = LYGETWeatherTests;
+			productReference = CD58FBD41BA15CC6003B9321 /* LYGETWeatherTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD58FBB31BA15CC6003B9321 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = LY;
+				TargetAttributes = {
+					CD58FBBA1BA15CC6003B9321 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					CD58FBD31BA15CC6003B9321 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = CD58FBBA1BA15CC6003B9321;
+					};
+				};
+			};
+			buildConfigurationList = CD58FBB61BA15CC6003B9321 /* Build configuration list for PBXProject "LYGETWeather" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CD58FBB21BA15CC6003B9321;
+			productRefGroup = CD58FBBC1BA15CC6003B9321 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD58FBBA1BA15CC6003B9321 /* LYGETWeather */,
+				CD58FBD31BA15CC6003B9321 /* LYGETWeatherTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD58FBB91BA15CC6003B9321 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD58FBCA1BA15CC6003B9321 /* Main.storyboard in Resources */,
+				CD58FBCF1BA15CC6003B9321 /* LaunchScreen.xib in Resources */,
+				CD58FBCC1BA15CC6003B9321 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD58FBD21BA15CC6003B9321 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD58FBB71BA15CC6003B9321 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD58FBC71BA15CC6003B9321 /* ViewController.m in Sources */,
+				CD58FBC41BA15CC6003B9321 /* AppDelegate.m in Sources */,
+				CD58FBC11BA15CC6003B9321 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD58FBD01BA15CC6003B9321 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD58FBDB1BA15CC6003B9321 /* LYGETWeatherTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CD58FBD61BA15CC6003B9321 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD58FBBA1BA15CC6003B9321 /* LYGETWeather */;
+			targetProxy = CD58FBD51BA15CC6003B9321 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CD58FBC81BA15CC6003B9321 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD58FBC91BA15CC6003B9321 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CD58FBCD1BA15CC6003B9321 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD58FBCE1BA15CC6003B9321 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CD58FBDC1BA15CC6003B9321 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CD58FBDD1BA15CC6003B9321 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD58FBDF1BA15CC6003B9321 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LYGETWeather/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CD58FBE01BA15CC6003B9321 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LYGETWeather/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CD58FBE21BA15CC6003B9321 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LYGETWeatherTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LYGETWeather.app/LYGETWeather";
+			};
+			name = Debug;
+		};
+		CD58FBE31BA15CC6003B9321 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LYGETWeatherTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LYGETWeather.app/LYGETWeather";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD58FBB61BA15CC6003B9321 /* Build configuration list for PBXProject "LYGETWeather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD58FBDC1BA15CC6003B9321 /* Debug */,
+				CD58FBDD1BA15CC6003B9321 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD58FBDE1BA15CC6003B9321 /* Build configuration list for PBXNativeTarget "LYGETWeather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD58FBDF1BA15CC6003B9321 /* Debug */,
+				CD58FBE01BA15CC6003B9321 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CD58FBE11BA15CC6003B9321 /* Build configuration list for PBXNativeTarget "LYGETWeatherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD58FBE21BA15CC6003B9321 /* Debug */,
+				CD58FBE31BA15CC6003B9321 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CD58FBB31BA15CC6003B9321 /* Project object */;
+}
