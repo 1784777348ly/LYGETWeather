@@ -43,7 +43,7 @@
 }
 
 
--(void)customWithModel:(WeatherModel *)model
+-(void)customWithModel:(WeatherModel *)model andModel:(WeatherModel *)modelTomorrow
 {
     _nameLable.text = [model.area firstObject];
     _timeLable.text = model.date;
@@ -62,7 +62,10 @@
         _weatherImage.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@",[model.info[@"night"] objectAtIndex:1]]];
 
     }
-  
+    
+    //传了今天和明天的两个天气模型，读者，可以自己发挥
+    
+    
     
 }
 -(BOOL)catuteTimeChange:(NSString *)preDate

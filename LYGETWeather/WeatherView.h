@@ -15,6 +15,6 @@
 @property(nonatomic)WeatherModel *model;
 
 
--(void)customWithModel:(WeatherModel *)model;
+-(void)customWithModel:(WeatherModel *)modelToday andModel:(WeatherModel *)modelTomorrow;
 
 @end

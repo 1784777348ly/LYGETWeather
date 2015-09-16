@@ -34,7 +34,7 @@
     
        
         
-       [weakSelf.Wview customWithModel:modelToday ];
+       [weakSelf.Wview customWithModel:modelToday andModel:modelTomorrow];
        
        [weakSelf.view addSubview:_Wview];
 
