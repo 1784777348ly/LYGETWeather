@@ -30,11 +30,11 @@
     
      __weak ViewController *weakSelf = self;
     
-    weather.getWeatherFinished = ^ (WeatherModel *model){
+    weather.getWeatherFinished = ^ (WeatherModel *modelToday,WeatherModel *modelTomorrow){
     
        
         
-       [weakSelf.Wview customWithModel:model];
+       [weakSelf.Wview customWithModel:modelToday ];
        
        [weakSelf.view addSubview:_Wview];
 

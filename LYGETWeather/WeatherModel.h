@@ -10,22 +10,54 @@
 
 @interface WeatherModel : NSObject
 
-@property(nonatomic,copy)NSString *city;
+@property(nonatomic,copy)NSString *date;
 @property(nonatomic,copy)NSString *temp1;
 @property(nonatomic,copy)NSString *temp2;
 @property(nonatomic,copy)NSString *weather;
 @property(nonatomic,copy)NSString *ptime;
 
+@property(nonatomic,retain)NSDictionary *info;
 
-/**weatherinfo": {
- "city": "北京",
- "cityid": "101010100",
- "temp1": "15℃",
- "temp2": "5℃",
- "weather": "多云",
- "img1": "d1.gif",
- "img2": "n1.gif",
- "ptime": "08:00"
- }
- }*/
+//@property(nonatomic,retain)NSArray *day;
+//@property(nonatomic,retain)NSArray *night;
+//
+@property(nonatomic,retain)NSArray *area;
+
+@property(nonatomic,retain)NSArray *pm25;
+
+
+
+/*{
+    "date": "2015-09-16",
+    "info": {
+        "day": [
+                "1",
+                "多云",
+                "27",
+                "东北风",
+                "3-4 级"
+                ],
+        "night": [
+                  "1",
+                  "多云",
+                  "17",
+                  "东北风",
+                  "微风"
+                  ]
+    }
+},
+ 
+ 
+ "area": [
+ "南京",
+ "101190101"
+ ],
+ "pm25": [
+ 43,
+ "2015091610"
+ ]
+ 
+ 
+ */
+
 @end

@@ -143,6 +143,7 @@
 		CD58FC351BA168A6003B9321 /* 雷雨.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雷雨.png"; sourceTree = "<group>"; };
 		CD58FC361BA168A6003B9321 /* 雾.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雾.png"; sourceTree = "<group>"; };
 		CD58FC371BA168A6003B9321 /* 风.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "风.png"; sourceTree = "<group>"; };
+		CD632C7D1BA90F1500179A84 /* WeatherInterfaceHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeatherInterfaceHeader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +211,7 @@
 			children = (
 				CD58FBBF1BA15CC6003B9321 /* Info.plist */,
 				CD58FBC01BA15CC6003B9321 /* main.m */,
+				CD632C7D1BA90F1500179A84 /* WeatherInterfaceHeader.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";

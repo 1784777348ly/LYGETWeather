@@ -12,6 +12,6 @@
 
 @interface GetWeather : NSObject
 
-@property(nonatomic ,strong)void (^getWeatherFinished)(WeatherModel *model);
+@property(nonatomic ,strong)void (^getWeatherFinished)(WeatherModel *modelToday , WeatherModel *modelTomorrow);
 
 @end

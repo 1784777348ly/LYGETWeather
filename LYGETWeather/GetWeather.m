@@ -9,13 +9,16 @@
 #import "GetWeather.h"
 #import "WeatherModel.h"
 #import "AFNetworking.h"
+#import "WeatherInterfaceHeader.h"
+
 
 @implementation GetWeather
 {
     NSDictionary * _cityWithCode;
     
     NSString * _cityCode;
-    WeatherModel *_model;
+    WeatherModel *_modelToday;
+    WeatherModel *_modelTomorrow;
     
 }
 
@@ -70,22 +73,52 @@
 
 -(void)createModel
 {
-    NSString *origStr = @"http://www.weather.com.cn/data/cityinfo/%@.html";
-    NSString *weatherStr = [NSString stringWithFormat:origStr,_cityCode];
+   
+    NSString *weatherStr = [NSString stringWithFormat:Weather360,_cityCode];
     AFHTTPRequestOperationManager *mgr = [AFHTTPRequestOperationManager manager];
     
     mgr.responseSerializer = [AFHTTPResponseSerializer serializer];
     
     [mgr GET:weatherStr parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
         
-        NSDictionary *tmpStr = [NSJSONSerialization JSONObjectWithData:responseObject options:0 error:nil];
-        NSDictionary *dict = [tmpStr objectForKey:@"weatherinfo"];
-        _model = [[WeatherModel alloc] init];
-        [_model setValuesForKeysWithDictionary:dict];
+        //去除bom头
+        NSRange  tmpRange = [operation.responseString  rangeOfString:@"("];
+        
+        NSRange ran = {tmpRange.location + 1, operation.responseString.length - tmpRange.location - 3};
+        
+        NSString *str = [operation.responseString substringWithRange:ran];
+
+        NSData  * data = [str dataUsingEncoding:NSUTF8StringEncoding];
+
+        
+        NSDictionary *tmpDic = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
+        NSArray *tmpArr = [tmpDic objectForKey:@"weather"];
+        NSDictionary *lastDic = [tmpDic objectForKey:@"pm25"];
+        
+        NSDictionary *TodayDict = tmpArr[0];
+        NSDictionary *TomoDict = tmpArr[1];
+        
+        if (!_modelTomorrow) {
+             _modelTomorrow = [[WeatherModel alloc] init];
+        }
+        if (!_modelToday) {
+            _modelToday = [[WeatherModel alloc] init];
+        }
+     
+        [_modelToday setValuesForKeysWithDictionary:TodayDict];
+        [_modelTomorrow setValuesForKeysWithDictionary:TomoDict];
+        
+        
+        _modelToday.area = lastDic[@"area"];
+        _modelToday.pm25 = lastDic[@"pm25"];
+        
+        
+        _modelTomorrow.area = lastDic[@"area"];
+        _modelTomorrow.pm25 = lastDic[@"pm25"];
         
         if (self.getWeatherFinished) {
             
-            self.getWeatherFinished(_model);
+            self.getWeatherFinished(_modelToday,_modelTomorrow);
         }
         
                 
