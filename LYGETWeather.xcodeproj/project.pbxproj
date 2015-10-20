@@ -54,6 +54,7 @@
 		CD58FC481BA168A6003B9321 /* 雷雨.png in Resources */ = {isa = PBXBuildFile; fileRef = CD58FC351BA168A6003B9321 /* 雷雨.png */; };
 		CD58FC491BA168A6003B9321 /* 雾.png in Resources */ = {isa = PBXBuildFile; fileRef = CD58FC361BA168A6003B9321 /* 雾.png */; };
 		CD58FC4A1BA168A6003B9321 /* 风.png in Resources */ = {isa = PBXBuildFile; fileRef = CD58FC371BA168A6003B9321 /* 风.png */; };
+		CDB99AC31BD5D231007CEE77 /* 小雨.png in Resources */ = {isa = PBXBuildFile; fileRef = CDB99AC21BD5D231007CEE77 /* 小雨.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -144,6 +145,7 @@
 		CD58FC361BA168A6003B9321 /* 雾.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雾.png"; sourceTree = "<group>"; };
 		CD58FC371BA168A6003B9321 /* 风.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "风.png"; sourceTree = "<group>"; };
 		CD632C7D1BA90F1500179A84 /* WeatherInterfaceHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeatherInterfaceHeader.h; sourceTree = "<group>"; };
+		CDB99AC21BD5D231007CEE77 /* 小雨.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "小雨.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -304,6 +306,7 @@
 		CD58FC241BA168A6003B9321 /* weather */ = {
 			isa = PBXGroup;
 			children = (
+				CDB99AC21BD5D231007CEE77 /* 小雨.png */,
 				CD58FC251BA168A6003B9321 /* 中雨.png */,
 				CD58FC261BA168A6003B9321 /* 中雨转晴.png */,
 				CD58FC271BA168A6003B9321 /* 中雪.png */,
@@ -415,6 +418,7 @@
 				CD58FC401BA168A6003B9321 /* 天气预报.png in Resources */,
 				CD58FC431BA168A6003B9321 /* 晴.png in Resources */,
 				CD57C3791BA1839200C53565 /* View.xib in Resources */,
+				CDB99AC31BD5D231007CEE77 /* 小雨.png in Resources */,
 				CD58FC3F1BA168A6003B9321 /* 大雪.png in Resources */,
 				CD58FC391BA168A6003B9321 /* 中雨转晴.png in Resources */,
 				CD58FBCA1BA15CC6003B9321 /* Main.storyboard in Resources */,

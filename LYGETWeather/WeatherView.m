@@ -72,12 +72,18 @@
 {
     NSDateFormatter *df = [[NSDateFormatter alloc] init];
     df.dateFormat = @"yyyy-MM-dd HH:mm:ss.0";
-    NSString * dateStr = [NSString stringWithFormat:@"%@ 8:00:00",preDate];
-    NSDate *datePoint = [df dateFromString:dateStr];
+    NSString * preDateStr = [NSString stringWithFormat:@"%@ 7:00:00",preDate];
+    NSString * sufDateStr = [NSString stringWithFormat:@"%@ 17:00:00",preDate];
     
-    int subTime = [datePoint timeIntervalSinceNow];
+    NSDate *preDatePoint = [df dateFromString:preDateStr];
+    NSDate *sufDatePoint = [df dateFromString:sufDateStr];
     
-    if (subTime >= 0) {
+    int subTime1 = [preDatePoint timeIntervalSinceNow];
+    int subTime2 = [sufDatePoint timeIntervalSinceNow];
+    
+    
+    
+    if (subTime1 <= 0 && subTime2 >= 0) {
         return YES;
     }
     return NO;
